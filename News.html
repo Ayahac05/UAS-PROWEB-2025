@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News - Ayhac Cinema</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+        background-color: #0e0e12;
+        color: #fff;
+      }
+
+      header {
+        background-color: #111;
+        padding: 20px 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+
+        /* Fixed navbar */
+        position: fixed;
+        top: 0;
+        width: 90%;
+        z-index: 1000;
+      }
+
+      .logo {
+        font-size: 48px;
+        font-weight: bold;
+        color: #f89e00;
+        font-family: "Great Vibes", cursive;
+      }
+
+      .logo span {
+        color: rgb(255, 255, 255);
+      }
+
+      nav a {
+        color: #ccc;
+        text-decoration: none;
+        margin-left: 30px;
+        font-size: 16px;
+        transition: color 0.3s;
+      }
+
+      nav a:hover {
+        color: #f89e00;
+      }
+
+      .news-section {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 140px 20px 20px; /* top padding ditambah agar konten tidak ketutup navbar */
+      }
+
+      .news-title {
+        text-align: center;
+        font-size: 36px;
+        color: #f89e00;
+        margin-bottom: 40px;
+      }
+
+      .news-card {
+        background: linear-gradient(145deg, #1c1c1c, #292929);
+        padding: 20px;
+        border-radius: 12px;
+        margin-bottom: 25px;
+        box-shadow: 0 4px 10px rgba(255, 153, 0, 0.15);
+        transition: transform 0.3s ease;
+      }
+
+      .news-card:hover {
+        transform: scale(1.01);
+      }
+
+      .news-headline {
+        font-size: 22px;
+        color: #f0a500;
+        margin-bottom: 10px;
+      }
+
+      .news-date {
+        font-size: 14px;
+        color: #bbb;
+        margin-bottom: 10px;
+      }
+
+      .news-summary {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #ddd;
+      }
+
+      .read-more {
+        display: inline-block;
+        margin-top: 10px;
+        color: #ff9900;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .read-more:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">Ay <span>hac </span>Cinema</div>
+      <nav>
+        <a href="Home.html">Home</a>
+        <a href="Bioskop.html">Movies</a>
+        <a href="theater.html">Theaters</a>
+      </nav>
+    </header>
+
+    <div class="news-section">
+      <h2 class="news-title">🎬 Movie News & Updates</h2>
+
+      <div class="news-card">
+        <h3 class="news-headline">‘Jurassic World’ Breaks Box Office Records!</h3>
+        <p class="news-date">June 11, 2025</p>
+        <p class="news-summary">The latest installment of Jurassic World has stomped into theaters with roaring success, smashing weekend ticket sales.</p>
+        <a href="https://collider.com/jurassic-world-breaks-box-office-record-beats-avengers/" class="read-more">Read More →</a>
+      </div>
+
+      <div class="news-card">
+        <h3 class="news-headline">‘Vikram’ Receives Standing Ovation at Film Festival</h3>
+        <p class="news-date">June 10, 2025</p>
+        <p class="news-summary">Kamal Haasan’s ‘Vikram’ earned critical praise and audience applause at the International Cinema Fest last night.</p>
+        <a href="https://www.hindustantimes.com/entertainment/the-longest-standing-ovation-at-cannes-film-festival-pans-labyrinth-22-minutes-low-budget-made-55-million-in-dvd-sales-101747888378802.html" class="read-more">Read More →</a>
+      </div>
+
+      <div class="news-card">
+        <h3 class="news-headline">Upcoming Thriller ‘Firestarter’ Teases Intense Plot</h3>
+        <p class="news-date">June 9, 2025</p>
+        <p class="news-summary">The much-anticipated thriller ‘Firestarter’ drops a new trailer—fans are hyped for its mysterious twists.</p>
+        <a href="https://en.wikipedia.org/wiki/Firestarter_(2022_film)" class="read-more">Read More →</a>
+      </div>
+    </div>
+  </body>
+</html>
