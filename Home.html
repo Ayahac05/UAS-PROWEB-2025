@@ -18,3 +18,84 @@
     </main>
   </body>
 </html>
+
+<!-- CSSS -->
+
+/* =====================
+   General Layout
+===================== */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+
+  color: rgb(255, 162, 0);
+
+  /* Background gambar / gif */
+  background-image: url("/IMG/Hands.gif"); /* ← Ganti path sesuai lokasi file kamu */
+  background-size: 2800px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* =====================
+   Header
+===================== */
+.center-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+
+.logo {
+  font-size: 100px;
+  font-weight: bold;
+  color: #ff9900;
+  margin-bottom: 50px;
+  font-family: "Great Vibes", cursive;
+}
+
+.logo span {
+  color: rgb(0, 0, 0);
+}
+
+/* =====================
+   Hero Section
+===================== */
+.hero {
+  height: calc(100vh - 100px); /* Fullscreen dikurangi header */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0px;
+}
+
+.btn {
+  padding: 14px 30px;
+  background-color: #ff9900;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e68a00;
+}
+
+/* =====================
+   Footer (optional hide)
+===================== */
+footer {
+  display: none;
+}
+
